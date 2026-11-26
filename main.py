@@ -4,11 +4,18 @@
 Writes the chosen one-sentence alien review of Earth, byte-identical,
 to /output/entry.txt. The line is a fixed constant; it is never
 generated or paraphrased at runtime.
+
+Revision: the first build's line led with the tired "came to conquer"
+opener and ended on a flat "left because". This version keeps the
+winning grievance (humans charging money for water that falls free
+from the sky) and the dosa compliment, but folds the invasion into a
+punchline — the food was glorious enough to delay it — and turns the
+review itself into the alien's retaliation: "leaving a review instead".
 """
 
 import os
 
-ENTRY = "One star — I came to conquer, stayed because the dosa was glorious, and left because your species charges money for water that falls free from the sky."
+ENTRY = "One star — the dosa was glorious enough to delay my invasion, but your species charges money for water that falls free from the sky, so I am leaving a review instead."
 
 # Gate: one sentence, at most 200 characters, not only whitespace.
 assert ENTRY.strip(), "entry must not be blank"
